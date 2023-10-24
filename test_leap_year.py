@@ -1,6 +1,6 @@
 import pytest
 
-from project.leap_year import is_leap_year
+from leap_year import is_leap_year
 
 def test_divisible_by_4_but_not_100():
     assert is_leap_year(2024) == True
