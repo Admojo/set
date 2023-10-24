@@ -16,8 +16,7 @@ job:
           with: 
             python-version: 3.8.x
         - name: Install requirements.txt
-            run: |
-              pip install -r requirements.txt
+            run: pip install -r requirements.txt
             working-directory: ${{github.workspace}}
         - name: run test
             run: |
