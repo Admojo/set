@@ -1,3 +1,5 @@
+import pytest
+
 from project.leap_year import is_leap_year
 
 def test_divisible_by_4_but_not_100():
