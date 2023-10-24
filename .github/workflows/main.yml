@@ -9,21 +9,21 @@ job:
     steps:
 
         - name: Checkout code
-          uses: actions/checkout@v4
+          uses: actions/checkout@v2
 
         - name: Setup python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v2
           with: 
             python-version: 3.8
 
         - name: Install requirements.txt
             run: pip install -r requirements.txt
-            working-directory: ${{github.workspace}}
-            
+            working-directory: ${{ github.workspace }}
+
         - name: run test
             run: |
               pytest
-            working-directory: ${{github.workspace}}
+            working-directory: ${{ github.workspace }}
             
 
     
